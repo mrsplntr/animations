@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+}
+
+#position {
+  margin: 50px auto;
+  text-align: center;
+  width: 260px;
+}
+
+.initial {
+  color: orange;
+  background: linear-gradient(90deg,
+      yellow 0%,
+      yellow 50%,
+      orange 50%,
+      orange 100%);
+  background-size: 200%;
+}
+
+.initial3 {
+  color: orange;
+  background: linear-gradient(90deg,
+      white 0%,
+      white 33.3333%,
+      orange 33.3333%,
+      orange 66.6666%,
+      yellow 66.6666%,
+      yellow 100%);
+  background-size: 300%;
+}
+
+.firstStep {
+  animation: slideFirst 3s linear forwards;
+}
+
+@keyframes slideFirst {
+  0% {
+  }
+  100% {
+    background-position: -100%;
+    color: yellow;
+  }
+}
+
+.secondStep {
+  animation: slideSecond 3s linear;
+}
+
+@keyframes slideSecond {
+  0% {
+  }
+  25% {
+    background-position: -100%;
+    color: yellow;
+  }
+  50% {
+    background-position: -100%;
+    color: yellow;
+  }
+  100% {
+    background-position: -200%;
+    color: orange;
+  }
+}
+
+.thirdStep {
+  animation: slideThird 3s linear forwards;
+}
+
+@keyframes slideThird {
+  0% {
+  }
+  50% {
+    background-position: -100%;
+    color: yellow;
+  }
+  100% {
+    background-position: -300%;
+    color: transparent;
+  }
+}
